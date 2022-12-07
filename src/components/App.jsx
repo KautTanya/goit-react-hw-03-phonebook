@@ -56,7 +56,7 @@ filter = (contacts, filter) => {
     contact.name.toLowerCase().includes(normalizedFilter));
   
   if (visibleContacts.length < 1) {
-    Notify.warning('This contact is not in phonebook');
+    Notify.warning('There are not contact in phonebook');
   }
   return visibleContacts;
 };
